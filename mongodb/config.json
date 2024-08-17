@@ -1,0 +1,4 @@
+{
+    "connectionString": "my-mongodb-connection-string",
+    "dbName": "my-database-name"
+}
