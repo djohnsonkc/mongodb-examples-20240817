@@ -14,7 +14,6 @@ app.get('/api/somethings/:id', myAPI.getItemById);
 app.post('/api/somethings', myAPI.addItem);
 app.put('/api/somethings/:id', myAPI.updateItem);
 app.delete('/api/somethings/:id', myAPI.deleteItem);
-app.post('/api/somethings', myAPI.signup);
 app.patch('/api/somethings/a-specific-attribute', myAPI.patchItem);
 
 
