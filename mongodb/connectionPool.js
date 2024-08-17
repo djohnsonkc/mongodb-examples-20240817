@@ -11,7 +11,7 @@ https://www.mongodb.com/docs/drivers/node/current/fundamentals/monitoring/connec
 
 
 const { MongoClient } = require("mongodb");
-var config = require("./config.json")
+const config = require("./config.json")
 const client = new MongoClient(config.connectionString);
 var database = null;
 var isConnected = false;

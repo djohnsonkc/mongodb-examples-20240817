@@ -1,10 +1,8 @@
-
 const express = require('express');
 const app = express();
 const http = require('http');
 const server = http.createServer(app);
 const myAPI = require('./api');
-
 
 //********************************************************************************
 // CRUD endpoints for myAPI (NO Security in this example)
@@ -16,11 +14,10 @@ app.put('/api/somethings/:id', myAPI.updateItem);
 app.delete('/api/somethings/:id', myAPI.deleteItem);
 app.patch('/api/somethings/a-specific-attribute', myAPI.patchItem);
 
-
 //********************************************************************************
 // Web server
 //********************************************************************************
-var port = process.env.PORT || 3000; 
+const port = process.env.PORT || 3000; 
 const pool = require('./mongodb/connectionPool');
 pool.init(function(status){
     if(status.ok) {
